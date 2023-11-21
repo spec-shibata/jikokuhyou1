@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var niigata = [ '0805', '0945', '1039', '1142']
+        var shibata = [ '0930', '1019', '1125', '1218']
+        var answer = prompt('何時何分に出発しますか？4桁で入力して下さい。')
+        for (var i = 0; i < niigata.length; i++){
+            if (answer < niigata[i]){
+                alert('次の電車は' + niigata[i] + 'に出発して' + shibata[i] + 'に着きます。')
+                break
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
